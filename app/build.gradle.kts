@@ -6,7 +6,9 @@ plugins {
 android {
     namespace = "com.batuhanozkan.starwarsapp"
     compileSdk = 34
-
+    buildFeatures {
+        viewBinding=true
+    }
     defaultConfig {
         applicationId = "com.batuhanozkan.starwarsapp"
         minSdk = 24

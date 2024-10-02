@@ -7,14 +7,224 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!-- Name Label and Text -->
+
+    <!-- Height Label and Text -->
+
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/nameText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="22dp"
+        android:text="TextView"
+        app:layout_constraintBaseline_toBaselineOf="@+id/nameLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nameLabel" />
+
+    <TextView
+        android:id="@+id/nameLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="22dp"
+        android:text="Full Name"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/nameText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/heightLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="39dp"
+        android:text="Height:"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/heightText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameLabel" />
+
+    <!-- Mass Label and Text -->
+    <TextView
+        android:id="@+id/heightText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/heightLabel"
+        app:layout_constraintTop_toBottomOf="@+id/nameText" />
+
+    <TextView
+        android:id="@+id/massLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="48dp"
+        android:text="Mass:"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/massText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heightLabel" />
+
+    <!-- Hair Color Label and Text -->
+    <TextView
+        android:id="@+id/massText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/massLabel"
+        app:layout_constraintTop_toBottomOf="@+id/heightText" />
+
+    <TextView
+        android:id="@+id/hairColorLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="17dp"
+        android:text="Hair Color:"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/hairColorText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/massLabel" />
+
+    <!-- Skin Color Label and Text -->
+    <TextView
+        android:id="@+id/hairColorText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:text="TextView"
+        app:layout_constraintBaseline_toBaselineOf="@+id/hairColorLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hairColorLabel" />
+
+    <TextView
+        android:id="@+id/skinColorLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="15dp"
+        android:text="Skin Color:"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/skinColorText"
+        app:layout_constraintEnd_toStartOf="@+id/skinColorText"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Eye Color Label and Text -->
+    <TextView
+        android:id="@+id/skinColorText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/skinColorLabel"
+        app:layout_constraintTop_toBottomOf="@+id/hairColorText" />
+
+    <TextView
+        android:id="@+id/eyeColorLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="22dp"
+        android:text="Eye Color:"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/eyeColorText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skinColorLabel" />
+
+    <TextView
+        android:id="@+id/eyeColorText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:text="TextView"
+        app:layout_constraintBaseline_toBaselineOf="@+id/eyeColorLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/eyeColorLabel" />
+    <!-- Birth Year Label and Text -->
+    <TextView
+        android:id="@+id/birthYearLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="18dp"
+        android:text="Birth Year:"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/birthYearText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eyeColorLabel" />
+
+    <!-- Gender Label and Text -->
+
+    <TextView
+        android:id="@+id/birthYearText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="13dp"
+        android:text="TextView"
+        app:layout_constraintBaseline_toBaselineOf="@+id/birthYearLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/birthYearLabel" />
+
+    <TextView
+        android:id="@+id/genderLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="36dp"
+        android:text="Gender:"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/genderText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/birthYearLabel" />
+
+    <!-- Homeworld Label and Text -->
+
+    <TextView
+        android:id="@+id/genderText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/genderLabel"
+        app:layout_constraintTop_toBottomOf="@+id/birthYearText" />
+
+    <TextView
+        android:id="@+id/homeworldLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="9dp"
+        android:text="Homeworld:"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/homeworldText"
+        app:layout_constraintEnd_toStartOf="@+id/homeworldText"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/homeworldText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="250dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/homeworldLabel"
+        app:layout_constraintTop_toBottomOf="@+id/genderText" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
